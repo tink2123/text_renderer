@@ -19,24 +19,24 @@ def parse_args():
     parser.add_argument('--img_width', type=int, default=256,
                         help="If 0, output images will have different width")
 
-    parser.add_argument('--chars_file', type=str, default='./data/chars/chn.txt',
+    parser.add_argument('--chars_file', type=str, default='./data/chars/eng.txt',
                         help='Chars allowed to be appear in generated images.')
 
     parser.add_argument('--config_file', type=str, default='./configs/default.yaml',
                         help='Set the parameters when rendering images')
 
-    parser.add_argument('--fonts_list', type=str, default='./data/fonts_list/chn.txt',
+    parser.add_argument('--fonts_list', type=str, default='./data/fonts_list/eng.txt',
                         help='Fonts file path to use')
 
     parser.add_argument('--bg_dir', type=str, default='./data/bg',
                         help="Some text images(according to your config in yaml file) will"
                              "use pictures in this folder as background")
 
-    parser.add_argument('--corpus_dir', type=str, default="./data/corpus",
+    parser.add_argument('--corpus_dir', type=str, default="./data/en_corpus",
                         help='When corpus_mode is chn or eng, text on image will randomly selected from corpus.'
                              'Recursively find all txt file in corpus_dir')
 
-    parser.add_argument('--corpus_mode', type=str, default='chn', choices=['random', 'chn', 'eng', 'list'],
+    parser.add_argument('--corpus_mode', type=str, default='list', choices=['random', 'chn', 'eng', 'list'],
                         help='Different corpus type have different load/get_sample method'
                              'random: random pick chars from chars file'
                              'chn: pick continuous chars from corpus'

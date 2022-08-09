@@ -6,7 +6,7 @@ font_size:
 # choose Text color range
 # color boundary is in R,G,B format
 font_color:
-  enable: false
+  enable: True
   blue:
     fraction: 0.5
     l_boundary: [0,0,150]
@@ -130,7 +130,7 @@ line:
     fraction: 0.3
 
 line_color:
-  enable: false
+  enable: true
   black:
     fraction: 0.5
     l_boundary: [0,0,0]
