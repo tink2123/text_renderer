@@ -92,7 +92,7 @@ def generate_img(img_index, q=None):
         fname = os.path.join(flags.save_dir, base_name + '.jpg')
         cv2.imwrite(fname, im)
 
-        label = "{} {}".format(base_name, word)
+        label = "{}\t{}".format(fname, word)
 
         if q is not None:
             q.put(label)
