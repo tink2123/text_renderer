@@ -25,14 +25,14 @@ def parse_args():
     parser.add_argument('--config_file', type=str, default='./configs/default.yaml',
                         help='Set the parameters when rendering images')
 
-    parser.add_argument('--fonts_list', type=str, default='./data/fonts_list/eng.txt',
+    parser.add_argument('--fonts_list', type=str, default='./data/fonts_list/thai.txt',
                         help='Fonts file path to use')
 
     parser.add_argument('--bg_dir', type=str, default='./data/bg',
                         help="Some text images(according to your config in yaml file) will"
                              "use pictures in this folder as background")
 
-    parser.add_argument('--corpus_dir', type=str, default="./data/en_corpus",
+    parser.add_argument('--corpus_dir', type=str, default="./data/thai_corpus",
                         help='When corpus_mode is chn or eng, text on image will randomly selected from corpus.'
                              'Recursively find all txt file in corpus_dir')
 
